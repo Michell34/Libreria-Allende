@@ -134,3 +134,30 @@ body {
   background-color: #efe6d8;
   font-size: 0.9rem;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .encabezado {
+    flex-direction: column;
+    gap: 0.6rem;
+    text-align: center;
+  }
+
+  .encabezado nav a {
+    margin: 0 0.7rem;
+  }
+
+  .bienvenida {
+    padding: 3rem 1rem;
+  }
+
+  .bienvenida h2 {
+    font-size: 1.7rem;
+  }
+
+  .formulario {
+    max-width: 100%;
+  }
+}
