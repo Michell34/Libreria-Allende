@@ -10,3 +10,154 @@ body {
   color: #3b2f2f;
   line-height: 1.6;
 }
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #5c3d2e;
+  color: #faf6f0;
+}
+
+.encabezado nav a {
+  color: #faf6f0;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.encabezado nav a:hover {
+  text-decoration: underline;
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 5rem 1.5rem;
+}
+
+.bienvenida h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.6rem;
+  background-color: #c8763a;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #a85f2c;
+}
+
+.catalogo,
+.agregar {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.catalogo h2,
+.agregar h2 {
+  margin-bottom: 1.5rem;
+}
+
+.lista-libros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.2rem;
+}
+
+.tarjeta-libro {
+  background-color: #fff;
+  border: 1px solid #e3d6c3;
+  border-left: 5px solid #c8763a;
+  border-radius: 6px;
+  padding: 1.1rem;
+}
+
+.tarjeta-libro h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.tarjeta-libro .autor {
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.tarjeta-libro .precio {
+  font-weight: bold;
+  color: #a85f2c;
+}
+
+.vacio {
+  text-align: center;
+  color: #7a6a5a;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  background-color: #fff;
+  border: 1px solid #e3d6c3;
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.formulario label {
+  margin-top: 0.8rem;
+  font-weight: bold;
+}
+
+.formulario input {
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #c9b8a3;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.pie {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #efe6d8;
+  font-size: 0.9rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .encabezado {
+    flex-direction: column;
+    gap: 0.6rem;
+    text-align: center;
+  }
+
+  .encabezado nav a {
+    margin: 0 0.7rem;
+  }
+
+  .bienvenida {
+    padding: 3rem 1rem;
+  }
+
+  .bienvenida h2 {
+    font-size: 1.7rem;
+  }
+
+  .formulario {
+    max-width: 100%;
+  }
+}
